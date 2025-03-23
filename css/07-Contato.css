@@ -1,0 +1,96 @@
+/* Principal */
+.secao-contato {
+    background-color: #263238; 
+    padding: 60px 0; 
+    color: white; 
+    text-align: center; 
+}
+
+/* Estilo título principal */
+.titulo-contato {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 2.5rem; 
+    margin-bottom: 50px; 
+    color: white; 
+}
+
+.formulario-contato {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.campo-contato {
+    width: 100%; 
+    background-color: #1a2327; 
+    border: none; 
+    padding: 15px 20px;
+    margin-bottom: 15px; 
+    color: white; 
+    border-radius: 4px; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.campo-mensagem {
+    height: 100px; 
+    resize: none; 
+}
+
+/* botão de enviar */
+.btn-enviar {
+    background-color: #4EADF3; 
+    color: white; 
+    border: none;
+    padding: 12px 30px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500; 
+    margin-top: 15px;
+}
+
+/* caixa de informações de emergência */
+.box-emergencia {
+    background-color: #1a2327; 
+    padding: 30px; 
+    border-radius: 4px; 
+    text-align: left; 
+    height: 241px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.titulo-emergencia {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600; 
+    font-size: 1.5rem; 
+    margin-bottom: 15px; 
+    color: white; 
+}
+
+.texto-emergencia {
+    color: white; 
+    margin-bottom: 15px; 
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.9; 
+}
+
+/* botão de emergência */
+.btn-emergencia {
+    background-color: #e74c3c; 
+    color: white; 
+    display: inline-block;
+    padding: 12px 25px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500; 
+    margin-top: auto; 
+}
+
+/* ícone dentro do botão de emergência */
+.btn-emergencia i {
+    margin-right: 8px;
+}

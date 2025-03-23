@@ -1,0 +1,175 @@
+/* -------------- BLOCO_PROFISSIONAIS -------------- */
+.secao-profissionais {
+    padding: 5rem 0;
+    background-color: #1E2731;
+    position: relative;
+    overflow: hidden;
+
+}/* Container principal da seção de profissionais */
+.secao-profissionais::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 20%, rgba(52, 152, 219, 0.07), rgba(30, 39, 49, 0) 60%);
+    pointer-events: none;
+
+}/* Gradiente de fundo decorativo */
+
+
+
+/* -------------- TÍTULO DA SEÇÃO -------------- */
+.titulo-secao {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+
+}/* Título principal da seção de profissionais */
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+
+}/* Linha decorativa abaixo do título */
+
+
+
+
+/* -------------- GRADE DE PROFISSIONAIS -------------- */
+.grade-profissionais {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 1rem;
+
+}/* Layout em grid responsivo para os cartões */
+
+
+
+/* -------------- CARTÃO DO PROFISSIONAL -------------- */
+.cartao-profissional {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+
+}/* Cartão individual de cada profissional */
+.cartao-profissional:hover {
+    transform: translateY(-0.75rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+}/* Efeito de elevação ao passar o mouse */
+.imagem-profissional {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #3498db;
+    transition: transform 0.5s ease;
+
+}/* Imagem do profissional */
+.cartao-profissional:hover .imagem-profissional {
+    transform: scale(1.05);
+
+}/* Efeito de zoom na imagem ao passar o mouse */
+
+
+
+
+/* -------------- INFORMAÇÕES DO PROFISSIONAL -------------- */
+.info-profissional {
+    padding: 1.75rem;
+    text-align: center;
+    position: relative;
+
+}/* Container das informações textuais */
+.nome-profissional {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+
+}/* Nome do profissional */
+.especialidade-profissional {
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}/* Especialidade do profissional */
+.descricao-profissional {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+
+}/* Descrição do profissional */
+
+
+
+
+/* -------------- REDES SOCIAIS DO PROFISSIONAL -------------- */
+.redes-sociais-profissional {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}/* Container dos ícones de redes sociais */
+.icone-social {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+
+}/* Ícone individual de rede social */
+.icone-social:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    transform: translateY(-3px);
+
+}/* Estado hover do ícone social */
+
+
+
+/* -------------- TEMPLATES E ANIMAÇÕES -------------- */
+.templates-profissionais {
+    display: none;
+
+}/* Esconde os templates originais HTML */
+/* Estados de Animação */
+.cartao-profissional.animar {
+    animation: aparecer-subindo 0.8s forwards;
+
+}/* Classe para ativar a animação de entrada */
+
+
+@keyframes aparecer-subindo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}/* Animação de entrada com movimento */

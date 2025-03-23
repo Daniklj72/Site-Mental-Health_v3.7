@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conecte-se com profissionais de saúde mental e grupos de apoio para melhorar seu bem-estar mental">
+    
+    <title>Mental Health Support Network</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/00-Main.css"> 
+    <link rel="stylesheet" href="css/01-header.css">
+    <link rel="stylesheet" href="css/02-Bloco-1.css">
+    <link rel="stylesheet" href="css/03-Volunteers.css">
+    <link rel="stylesheet" href="css/04-Blog.css">
+    <link rel="stylesheet" href="css/05-Faq.css">
+    <link rel="stylesheet" href="css/06-email notifications.css">
+    <link rel="stylesheet" href="css/07-Contato.css">
+    <link rel="stylesheet" href="css/08-Footer.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#"><i class="fas fa-heart"></i> Mental Health Support</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio" id="nav-inicio">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#voluntarios" id="nav-voluntarios">Volunteers</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog" id="nav-blog">BLOG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq" id="nav-faq">FAQ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato" id="nav-contato">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            <div class="container-botao-login">
+                <a class="nav-link btn btn-primary text-white" href="pages/login.html" id="botaoLogin">Login</a>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bloco Principal -->
+        <section id="inicio" class="secao-principal">
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1>Encontre Suporte <br> Quando Você Mais Precisa</h1>
+                        <p>Conecte-se com profissionais de saúde mental e grupos de apoio que estão
+                            aqui para ajudá-lo em sua jornada para uma melhor saúde mental.</p>
+                        <div class="botoes-principais">
+                            <a href="#voluntarios" class="btn btn-primary">Encontre Suporte</a>
+                            <a href="#cadastro-voluntario" class="btn btn-outline-primary">Torne-se um voluntário</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure>
+                            <img src="Assets/Img/pixel art-heart.png" alt="Mental Health Support" class="img-fluid imagem-principal">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- Bloco Voluntários -->
+        <article id="voluntarios" class="secao-profissionais">
+            <div class="container">
+                
+                <h2 class="titulo-secao">Nossos Profissionais Saúde Mental</h2>
+                
+                <div class="templates-profissionais">
+
+                    <!-- Profissional 1 -->
+                    <div id="profissional-1" class="template-profissional" data-category="psicologo">
+
+                        <img data-src="Assets/img/Volunteers/Psicóloga_ Dra. Maria Silva.jpg" alt="Dra. Maria Silva" class="imagem-profissional">
+                        <div class="info-profissional">
+
+                            <h3 class="nome-profissional">Dra. Maria Silva</h3>
+                            <p class="especialidade-profissional">Psicóloga Clínica</p>
+                            <p class="descricao-profissional">Especialista em terapia cognitivo-comportamental com mais de 10 anos de experiência.</p>
+                            
+                            <div class="redes-sociais-profissional">
+                                <a href="#" class="icone-social"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="icone-social"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 2 -->
+                    <div id="profissional-2" class="template-profissional" data-category="psiquiatra">
+                        
+                        <img data-src="Assets/img/Volunteers/Psiquiatra_Dr. João Santos.jpg" alt="Dr. João Santos" class="imagem-profissional">
+                        <div class="info-profissional">
+                            
+                            <h3 class="nome-profissional">Dr. João Santos</h3>
+                            <p class="especialidade-profissional">Psiquiatra</p>
+                            <p class="descricao-profissional">Especialista em saúde mental de adultos e adolescentes.</p>
+                            
+                            <div class="redes-sociais-profissional">
+                                <a href="#" class="icone-social"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="icone-social"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 3 -->
+                    <div id="profissional-3" class="template-profissional" data-category="terapeuta">
+                        
+                        <img data-src="Assets/img/Volunteers/Terapeuta_Dra. Ana Oliveira.jpg" alt="Dra. Ana Oliveira" class="imagem-profissional">
+                        <div class="info-profissional">
+                            
+                            <h3 class="nome-profissional">Dra. Ana Oliveira</h3>
+                            <p class="especialidade-profissional">Terapeuta</p>
+                            <p class="descricao-profissional">Especialista em terapia familiar e relacionamentos.</p>
+                            
+                            <div class="redes-sociais-profissional">
+                                <a href="#" class="icone-social"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="icone-social"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container onde os cards serão injetados -->
+                <div id="grade-profissionais" class="grade-profissionais"></div>
+            </div>
+
+        </article>
+
+        <!-- Bloco BloG  -->
+        <article id="blog" class="Block_Blog">
+            <div class="container">
+                <h2>Recursos de Saúde Mental</h2>
+                
+                <div class="introduction">
+                    <p>Explore nossa coleção abrangente de recursos de saúde mental projetados para apoiar sua 
+                        jornada de bem-estar. De artigos de especialistas a exercícios guiados, encontre as ferramentas
+                        necessárias para nutrir sua saúde mental.</p>
+                </div>
+                
+                <!-- Categorias com efeito -->
+                <div class="topic-filter-buttons">
+                    <button class="topic-button">Ansiedade</button>
+                    <button class="topic-button">Depressão</button>
+                    <button class="topic-button">Atenção plena</button>
+                    <button class="topic-button">Auto-Cuidado</button>
+                    <button class="topic-button">Relações</button>
+                </div>
+                
+                <!-- Icons com efeito  -->
+                <div class="Icons"> 
+                    <div class="box_Icons"> 
+                        <div class="icon-container">
+                            <i class="fas fa-book-medical type-icon"></i>
+                        </div>
+                        <h4 class="box_Icons_Title">Artigos de Especialistas</h4>
+                        <p class="box_Icons_description">Recursos apoiados por pesquisas de profissionais de saúde mental
+                        </p>
+                    </div>
+                    
+                    <div class="box_Icons">
+                        <div class="icon-container">
+                            <i class="fas fa-hands-helping type-icon"></i>
+                        </div>
+                        <h4 class="box_Icons_Title">Grupos de Suporte</h4>
+                        <p class="box_Icons_description">Conecte-se com pessoas que entendem o que você está passando</p>
+                    </div>
+                    
+                    <div class="box_Icons">
+                        <div class="icon-container">
+                            <i class="fas fa-brain type-icon"></i>
+                        </div>
+                        <h4 class="box_Icons_Title">Ferramentas de Auto-Ajuda</h4>
+                        <p class="box_Icons_description">Exercícios práticos e estratégias para o uso diário</p>
+                    </div>
+                    
+                    <div class="box_Icons">
+                        <div class="icon-container">
+                            <i class="fas fa-user-md type-icon"></i>
+                        </div>
+                        <h4 class="box_Icons_Title">Ajuda Profissional</h4>
+                        <p class="box_Icons_description">Orientação sobre quando e como procurar apoio profissional</p>
+                    </div>
+                </div>
+        
+        
+                <!-- Efeito de linha de tempo -->
+                <div class="platform-process-flow">
+                    <h3 class="process-heading">Como Nossa Plataforma Apoia Você</h3>
+                    <p class="process-subheading">Acreditamos em tornar o apoio à saúde mental acessível, compassivo
+                            e adaptado às suas necessidades exclusivas.</p>
+                    
+                    <div class="journey-steps">
+                        <div class="journey-step-box">
+                            <div class="step-circle">1</div>
+                            <h4 class="step-heading">Explore Recursos</h4>
+                            <p class="step-details">Navegue pela nossa coleção de artigos e ferramentas de saúde mental</p>
+                        </div>
+                        
+                        <div class="journey-step-box">
+                            <div class="step-circle">2</div>
+                            <h4 class="step-heading">Encontre Suporte</h4>
+                            <p class="step-details">Conecte-se com profissionais ou participe de comunidades de apoio</p>
+                        </div>
+                        
+                        <div class="journey-step-box">
+                            <div class="step-circle">3</div>
+                            <h4 class="step-heading">Tome Ação</h4>
+                            <p class="step-details">Implemente estratégias e acompanhe seu progresso ao longo do tempo</p>
+                        </div>
+                    </div>
+                </div>
+                
+        
+        
+        
+                <!-- Cartões estilizados do BLOG -->
+                <div class="articles-card-grid">
+        
+                    <!-- Card 1 -->
+                    <div class="article-card">
+        
+                        <div class="article-image-wrapper">
+                            <img src="Assets/Img/Blog/Example_3.jpg" alt="Mindfulness meditation" class="article-thumbnail">
+                            <span class="article-category-label">Mindfulness</span>
+                        </div>
+        
+                        <div class="article-text-content">
+        
+                            <h3 class="article-heading">5 Práticas de Mindfulness para o Dia a Dia</h3>
+                            <p class="article-summary">Técnicas simples de atenção plena que você pode incorporar à sua rotina diária para reduzir o estresse e aumentar a consciência.</p>
+                            
+                            <div class="article-metadata">
+        
+                                <div class="author-info">
+                                    <img src="" alt="Author" class="author-photo">
+                                    <span class="author-fullname">Dra. Emma Chen</span>
+                                </div>
+        
+                                <div class="publication-date">
+                                    <i class="far fa-calendar date-icon"></i> 15 Fev, 2024
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    
+                    <!-- Card 2 -->
+                    <div class="article-card">
+        
+                        <div class="article-image-wrapper">
+                            <img src="Assets/Img/Blog/Example_1.jpg" alt="Depression support" class="article-thumbnail">
+                            <span class="article-category-label">Depressão</span>
+                        </div>
+        
+                        <div class="article-text-content">
+        
+                            <h3 class="article-heading">Reconhecendo a Depressão: Sinais e Sintomas</h3>
+                            <p class="article-summary">Aprenda a identificar os sinais comuns de depressão e entenda quando é hora de buscar ajuda profissional.</p>
+                            
+                            <div class="article-metadata">
+                                
+                                <div class="author-info">
+                                    <img src="" alt="Author" class="author-photo">
+                                    <span class="author-fullname">Dr. Michael Rodriguez</span>
+                                </div>
+        
+                                <div class="publication-date">
+                                    <i class="far fa-calendar date-icon"></i> 28 Jan, 2024
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                    
+                    <!-- Resource Card 3 -->
+                    <div class="article-card">
+        
+                        <div class="article-image-wrapper">
+                            <img src="Assets/Img/Blog/Example_6.jpg" alt="Self-care routine" class="article-thumbnail">
+                            <span class="article-category-label">Auto-Cuidado</span>
+                        </div>
+        
+                        <div class="article-text-content">
+        
+                            <h3 class="article-heading">Construindo uma Rotina de Autocuidado Duradoura</h3>
+                            <p class="article-summary">Dicas práticas para criar e manter uma rotina de autocuidado que se adapte ao seu estilo de vida e atenda às suas necessidades únicas.</p>
+                            
+                            <div class="article-metadata">
+        
+                                <div class="author-info">
+                                    <img src="" alt="Author" class="author-photo">
+                                    <span class="author-fullname">Sarah Johnson, LMFT</span>
+                                </div>
+        
+                                <div class="publication-date">
+                                    <i class="far fa-calendar date-icon"></i> 3 Mar, 2024
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    
+                    <!-- Resource Card 4 -->
+                    <div class="article-card">
+        
+                        <div class="article-image-wrapper">
+                            <img src="Assets/Img/Blog/Example_10.jpg" alt="Anxiety management" class="article-thumbnail">
+                            <span class="article-category-label">Ansiedade</span>
+                        </div>
+        
+                        <div class="article-text-content">
+        
+                            <h3 class="article-heading">Lidando com Ataques de Pânico: Estratégias de Emergência</h3>
+                            <p class="article-summary">Técnicas imediatas e abordagens de longo prazo para gerenciar ataques de pânico e reduzir sua frequência e intensidade.</p>
+                            
+                            <div class="article-metadata">
+        
+                                <div class="author-info">
+                                    <img src="" alt="Author" class="author-photo">
+                                    <span class="author-fullname">Dr. Alex Thompson</span>
+                                </div>
+        
+                                <div class="publication-date">
+                                    <i class="far fa-calendar date-icon"></i> 8 Fev, 2024
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Resource Card 5 -->
+                    <div class="article-card">
+        
+                        <div class="article-image-wrapper">
+                            <img src="Assets/Img/Blog/Example_17.jpg" alt="Mindfulness meditation" class="article-thumbnail">
+                            <span class="article-category-label">Inteligência Emocional</span>
+                        </div>
+        
+                        <div class="article-text-content">
+        
+                            <h3 class="article-heading">Comunicação Efetiva: A Base de Relacionamentos Saudáveis</h3>
+                            <p class="article-summary">Aprenda técnicas de comunicação não-violenta e escuta ativa para fortalecer seus relacionamentos e resolver conflitos de forma construtiva.</p>
+                            
+                            <div class="article-metadata">
+                                <div class="author-info">
+        
+                                    <img src="" alt="Author" class="author-photo">
+                                    <span class="author-fullname">Dr. Felipe Martins</span>
+                                </div>
+        
+                                <div class="publication-date">
+                                    <i class="far fa-calendar date-icon"></i> 20 Fev, 2024
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Resource Card 6 -->
+                    <div class="article-card">
+        
+                        <div class="article-image-wrapper">
+                            <img src="Assets/Img/Blog/Example_14.jpg" alt="Mindfulness meditation" class="article-thumbnail">
+                            <span class="article-category-label">Saúde do Sono</span>
+                        </div>
+        
+                        <div class="article-text-content">
+        
+                            <h3 class="article-heading">Higiene do Sono: 7 Passos para Noites Mais Tranquilas</h3>
+                            <p class="article-summary">Descubra como estabelecer uma rotina de sono adequada e criar um ambiente propício para descansar melhor e aumentar seu bem-estar diário.</p>
+                            
+                            <div class="article-metadata">
+        
+                                <div class="author-info">
+                                    <img src="" alt="Author" class="author-photo">
+                                    <span class="author-fullname">Dra. Laura Campos</span>
+                                </div>
+        
+                                <div class="publication-date">
+                                    <i class="far fa-calendar date-icon"></i> 12 Fev, 2024
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+        
+        
+                    <!-- É AQUI ONDE ADICIONA MAIS CARTOES ! -->
+        
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="action-prompt-box">
+        
+                    <h3 class="prompt-heading">Pronto para Dar o Próximo Passo?</h3>
+                    <p class="prompt-message">Esteja você procurando apoio profissional ou querendo se juntar à nossa comunidade de voluntários, estamos aqui para ajudá-lo em sua jornada de saúde mental.</p>
+                    
+                    <div class="action-buttons">
+                        <a href="#volunteers" class="btn action-button primary-action-button">Encontrar Suporte</a>
+                        <a href="#volunteer-signup" class="btn action-button secondary-action-button">Torne-se um Voluntário</a>
+                    </div>
+        
+                </div>
+            </div>
+        </article>
+
+        <!-- Bloco FAQ  -->
+        <section id="faq" class="Main_Block_faq">
+            <div class="container">
+                <h2>Perguntas frequentes</h2>
+                
+                <!-- Barra de pesquisa -->
+                <div class="faq-search">
+                    <input type="text" id="faqSearchInput" placeholder="Pesquisar perguntas...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <!-- Categorias  -->
+                <div class="block_faq-category">
+                    <button class="faq-category-btn active" data-category="all">Todas</button>
+                    <button class="faq-category-btn" data-category="platform">Plataforma</button>
+                    <button class="faq-category-btn" data-category="services">Serviços</button>
+                    <button class="faq-category-btn" data-category="volunteer">Voluntariado</button>
+                    <button class="faq-category-btn" data-category="privacy">Privacidade</button>
+                </div>
+                
+                <div class="faq-columns">
+
+                    <div class="faq-column">
+                        <div class="block_inside" id="faq_colum-Left">
+
+                            <!-- FAQ Item 1 -->
+                            <div class="block_inside-item" data-category="platform">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Como a plataforma funciona?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="block_inside-body">
+                                        Nossa plataforma conecta indivíduos que buscam suporte de saúde mental com profissionais qualificados e grupos de suporte. Os usuários podem navegar pelos profissionais disponíveis, ler seus perfis e agendar sessões diretamente pela plataforma.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 2 -->
+                            <div class="block_inside-item" data-category="services">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Os serviços são gratuitos?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="block_inside-body">
+                                        Oferecemos serviços gratuitos e pagos. Muitos dos nossos voluntários fornecem suporte gratuito, enquanto alguns profissionais podem cobrar por seus serviços. Todas as informações de preços são exibidas claramente em seus perfis.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 3 -->
+                            <div class="block_inside-item" data-category="volunteer">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Como me torno um voluntário?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="block_inside-body">
+                                        Para se tornar um voluntário, você precisa ser um profissional de saúde mental licenciado ou ter experiência relevante em fornecer suporte de saúde mental. Você pode se inscrever por meio do nosso formulário de registro de voluntário, e nossa equipe analisará sua inscrição.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 4 -->
+                            <div class="block_inside-item" data-category="privacy">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Minhas informações são privadas?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="block_inside-body">
+                                        Sim, levamos a privacidade a sério. Todas as comunicações e informações pessoais são criptografadas e armazenadas com segurança. Nunca compartilhamos suas informações com terceiros sem seu consentimento explícito.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 5 -->
+                            <div class="block_inside-item" data-category="services">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        O que devo fazer em caso de emergência?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionLeft">
+                                    <div class="block_inside-body">
+                                        Se você estiver passando por uma emergência de saúde mental, ligue para os serviços de emergência (911) imediatamente ou entre em contato com uma linha de ajuda de crise. Nossa plataforma não é destinada a situações de emergência.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-column">
+                        <div class="block_inside" id="faq_colum-Right">
+                            <!-- FAQ Item 6 -->
+                            <div class="block_inside-item" data-category="platform">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                        Posso escolher o mesmo profissional para todas as sessões?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="block_inside-body">
+                                        Sim, você pode selecionar o mesmo profissional para todas as suas sessões, desde que ele esteja disponível. Nossa plataforma facilita a continuidade do atendimento, permitindo que você estabeleça uma relação de confiança com seu profissional de saúde mental.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 7 -->
+                            <div class="block_inside-item" data-category="services">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                        Quais tipos de suporte são oferecidos?
+                                    </button>
+                                </h2>
+                                <div id="faq7" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="block_inside-body">
+                                        Oferecemos vários tipos de suporte, incluindo terapia individual, aconselhamento em grupo, meditação guiada, suporte por pares e recursos educacionais. Cada profissional lista suas especialidades e abordagens específicas em seu perfil.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 8 -->
+                            <div class="block_inside-item" data-category="platform">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                        Como são as sessões online?
+                                    </button>
+                                </h2>
+                                <div id="faq8" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="block_inside-body">
+                                        As sessões online ocorrem através de nossa plataforma segura de videoconferência. Você receberá um link para acessar sua sessão no horário agendado. Recomendamos usar um dispositivo com uma boa conexão de internet, câmera e microfone em um ambiente privado.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 9 -->
+                            <div class="block_inside-item" data-category="privacy">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                                        As sessões são gravadas?
+                                    </button>
+                                </h2>
+                                <div id="faq9" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="block_inside-body">
+                                        Não, não gravamos nenhuma sessão. Nosso compromisso com sua privacidade é absoluto. As sessões ocorrem em tempo real e nenhum conteúdo é armazenado ou gravado em nossos servidores, garantindo a confidencialidade completa das suas interações.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- FAQ Item 10 -->
+                            <div class="block_inside-item" data-category="services">
+                                <h2 class="block_inside-header">
+                                    <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                                        Posso cancelar ou reagendar uma sessão?
+                                    </button>
+                                </h2>
+                                <div id="faq10" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionRight">
+                                    <div class="block_inside-body">
+                                        Sim, você pode cancelar ou reagendar uma sessão através do seu painel de usuário até 24 horas antes do horário agendado. Cancelamentos com menos de 24 horas de antecedência podem estar sujeitos à política de cancelamento do profissional específico.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles -->
+                <div class="faq-controls">
+                    <button id="expandAllBtn" class="faq-control-btn">Expandir Todos</button>
+                    <button id="collapseAllBtn" class="faq-control-btn">Recolher Todos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco notifições no emal  -->
+        <div class="email_notifications">email notifications
+            <h3 class="email_notifications-title">Mantenha-se atualizado com recursos de saúde mental</h3>
+            <p class="email_notifications-description">Subscribe nossa newsletter e receba os últimos recursos 
+                de saúde mental, dicas e informações sobre eventos diretamente na sua caixa de entrada.</p>
+            <form class="email_notifications-form">
+                
+            <input type="email" placeholder="Seu endereço de e-mail" class="email_notifications-input" required>
+            <button type="submit" class="email_notifications-button">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Bloco Contato -->
+        <section id="contato" class="secao-contato">
+            <div class="container">
+                <h2 class="titulo-contato">Entre em contato</h2>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="formulario-contato">
+                            <input type="text" class="campo-contato" placeholder="Seu nome">
+                            
+                            <input type="email" class="campo-contato" placeholder="Seu e-mail">
+                            
+                            <textarea class="campo-contato campo-mensagem" placeholder="Sua mensagem"></textarea>
+                            
+                            <button type="submit" class="btn-enviar">Enviar mensagem</button>
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="box-emergencia">
+                            <h3 class="titulo-emergencia">Suporte de emergência</h3>
+                            
+                            <p class="texto-emergencia">Se você estiver em crise, ligue para os serviços de emergência ou entre em contato com uma linha de apoio a crises imediatamente.</p>
+                            
+                            <a href="tel:911" class="btn-emergencia">
+                                <i class="fas fa-phone-alt"></i> Emergência: 911
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h3>Mental Health Support</h3>
+                        <p>Conectando pessoas com profissionais de saúde mental e grupos de apoio.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#volunteers">Volunteers</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Mental Health Support Network. All rights reserved.</p>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- JavaScript Personalizado -->
+    <script src="javascript/03-Animacao_Volunteers.js"></script>
+    <script src="javascript/05-Faq.js"></script>
+
+</body>
+</html>

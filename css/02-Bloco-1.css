@@ -1,0 +1,67 @@
+/* -------------- BLOCO PRINCIPAL -------------- */
+
+.secao-principal {
+    padding-top: 8rem;
+    background: linear-gradient(135deg, #141a20 0%, #1a2027 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+}/* Container principal da seção hero com gradiente escuro */
+
+
+.secao-principal h1 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+
+}/* Título principal responsivo com tamanho adaptativo */
+
+
+.secao-principal p {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+
+}/* Texto descritivo em tom cinza claro */
+
+
+.botoes-principais {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}/* Container flexível para os botões principais */
+
+
+.botoes-principais .btn-primary {
+    color: #ffffff;
+    background-color: #3498db;
+    border-color: #3498db;
+
+}/* Estilo do botão primário em azul */
+
+
+.botoes-principais .btn-outline-primary {
+    color: #3498db;
+    border-color: #3498db;
+    background-color: transparent;
+
+}/* Estilo do botão outline com contorno azul */
+
+
+.botoes-principais .btn-outline-primary:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background: linear-gradient(135deg, #141a20 0%, #1a2027 100%);
+
+}/* Efeito hover com gradiente escuro para o botão outline */
+
+
+.secao-principal img {
+    max-width: 80%;
+    height: auto;
+    animation: flutuar 6s ease-in-out infinite;
+
+}/* Image
