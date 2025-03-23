@@ -1,9 +1,21 @@
-/* Principal */
+/* Estilo principal da seção */
 .secao-contato {
     background-color: #263238; 
     padding: 60px 0; 
     color: white; 
-    text-align: center; 
+    text-align: center;
+    position: relative; /* Necessário para posicionar a linha inferior */
+}
+
+/* Linha decorativa inferior */
+.secao-contato::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #3498db, transparent);
+    left: 0;
+    bottom: 0;
 }
 
 /* Estilo título principal */
@@ -15,12 +27,14 @@
     color: white; 
 }
 
+/* Estilo do formulário */
 .formulario-contato {
     display: flex; 
     flex-direction: column; 
     align-items: flex-start; 
 }
 
+/* Estilo dos campos do formulário */
 .campo-contato {
     width: 100%; 
     background-color: #1a2327; 
@@ -32,12 +46,13 @@
     font-family: 'Poppins', sans-serif; 
 }
 
+/* Estilo específico da área de mensagem */
 .campo-mensagem {
     height: 100px; 
     resize: none; 
 }
 
-/* botão de enviar */
+/* Estilo do botão de enviar */
 .btn-enviar {
     background-color: #4EADF3; 
     color: white; 
@@ -50,7 +65,7 @@
     margin-top: 15px;
 }
 
-/* caixa de informações de emergência */
+/* Estilo da caixa de informações de emergência */
 .box-emergencia {
     background-color: #1a2327; 
     padding: 30px; 
@@ -62,6 +77,7 @@
     justify-content: space-between; 
 }
 
+/* Estilo do título da seção de emergência */
 .titulo-emergencia {
     font-family: 'Poppins', sans-serif; 
     font-weight: 600; 
@@ -70,6 +86,7 @@
     color: white; 
 }
 
+/* Estilo do texto da seção de emergência */
 .texto-emergencia {
     color: white; 
     margin-bottom: 15px; 
@@ -77,7 +94,7 @@
     line-height: 1.9; 
 }
 
-/* botão de emergência */
+/* Estilo do botão de emergência */
 .btn-emergencia {
     background-color: #e74c3c; 
     color: white; 
@@ -90,7 +107,7 @@
     margin-top: auto; 
 }
 
-/* ícone dentro do botão de emergência */
+/* Estilo do ícone dentro do botão de emergência */
 .btn-emergencia i {
     margin-right: 8px;
 }

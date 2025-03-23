@@ -108,7 +108,8 @@
 /* Estilização do botão que contém a pergunta do FAQ */
 /* Este elemento é clicável e controla a expansão/recolhimento da resposta */
 .block_inside-button {
-    padding: 18px 25px;
+    
+    padding: 18px 5px;
     font-weight: 500;
     font-size: 17px;
     color: #333;
