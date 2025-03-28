@@ -99,70 +99,101 @@
         </section>
 
         <!-- Bloco Voluntários -->
-        <article id="voluntarios" class="secao-profissionais">
+        <section class="bloco-voluntarios text-center">
+            
             <div class="container">
                 
-                <h2 class="titulo-secao">Nossos Profissionais Saúde Mental</h2>
+                <h2 class="titulo-voluntarios">Nossos Profissionais de Saúde Mental</h2>
+        
+                    <div class="row"> <!-- Adicionei row para garantir o layout em linha -->
+                        <!-- Profissional 1 -->
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="cartao-profissional text-center">
+                                <img src="Assets/Img/Volunteers/Psicóloga_ Dra.Maria Silva.jpg" class="cartao-imagem" alt="Dra. Maria Silva">
+                                <div class="cartao-corpo">
+                                    <h5 class="cartao-nome">Dra. Maria Silva</h5>
+                                    <p class="cartao-especialidade">Psicóloga Clínica</p>
+                                    <p class="cartao-descricao">Especialista em terapia cognitivo-comportamental</p>
+
+                                    <button class="btn btn-saiba-mais btn-outline-primary btn-sm w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalMariaSilva">
+                                        Saiba Mais
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profissional 2 -->
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="cartao-profissional text-center">
+                                <img src="Assets/Img/Volunteers/Psiquiatra_Dr.JoãoSantos.jpg" class="cartao-imagem" alt="Dr. João Santos">
+                                <div class="cartao-corpo">
+                                    <h5 class="cartao-nome">Dr. João Santos</h5>
+                                    <p class="cartao-especialidade">Psiquiatra</p>
+                                    <p class="cartao-descricao">Especialista em saúde mental de adultos</p>
+                                    <button class="btn btn-saiba-mais btn-outline-primary btn-sm w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalMariaSilva">
+                                        Saiba Mais
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profissional 3 -->
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                            <div class="cartao-profissional text-center">
+                                <img src="Assets/Img/Volunteers/Terapeuta_Dra.AnaOliveira.jpg" class="cartao-imagem" alt="Dra. Ana Oliveira">
+                                <div class="cartao-corpo">
+                                    <h5 class="cartao-nome">Dra. Ana Oliveira</h5>
+                                    <p class="cartao-especialidade">Terapeuta</p>
+                                    <p class="cartao-descricao">Especialista em terapia familiar</p>
+                                    <button class="btn btn-saiba-mais btn-outline-primary btn-sm w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modalMariaSilva">
+                                        Saiba Mais
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            <!-- Bloco Modal Detalhes Profissionais -->
+            <div class="modal-detalhes-profissionais">
+                <div class="overlay-background"></div>
                 
-                <div class="templates-profissionais">
-
-                    <!-- Profissional 1 -->
-                    <div id="profissional-1" class="template-profissional" data-category="psicologo">
-
-                        <img data-src="Assets/img/Volunteers/Psicóloga_ Dra. Maria Silva.jpg" alt="Dra. Maria Silva" class="imagem-profissional">
-                        <div class="info-profissional">
-
-                            <h3 class="nome-profissional">Dra. Maria Silva</h3>
-                            <p class="especialidade-profissional">Psicóloga Clínica</p>
-                            <p class="descricao-profissional">Especialista em terapia cognitivo-comportamental com mais de 10 anos de experiência.</p>
-                            
-                            <div class="redes-sociais-profissional">
-                                <a href="#" class="icone-social"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="icone-social"><i class="fas fa-envelope"></i></a>
+                <div class="modal-container">
+                    <div class="modal-content">
+                        <button class="modal-fechar">&times;</button>
+                        
+                        <div class="modal-header">
+                            <div class="avatar-container">
+                                <img src="" alt="" class="profissional-avatar">
+                            </div>
+                            <div class="header-texto">
+                                <h3 class="nome-profissional"></h3>
+                                <p class="especialidade-profissional"></p>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Profissional 2 -->
-                    <div id="profissional-2" class="template-profissional" data-category="psiquiatra">
-                        
-                        <img data-src="Assets/img/Volunteers/Psiquiatra_Dr. João Santos.jpg" alt="Dr. João Santos" class="imagem-profissional">
-                        <div class="info-profissional">
-                            
-                            <h3 class="nome-profissional">Dr. João Santos</h3>
-                            <p class="especialidade-profissional">Psiquiatra</p>
-                            <p class="descricao-profissional">Especialista em saúde mental de adultos e adolescentes.</p>
-                            
-                            <div class="redes-sociais-profissional">
-                                <a href="#" class="icone-social"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="icone-social"><i class="fas fa-envelope"></i></a>
+                        <div class="modal-body">
+                            <div class="secao-detalhes">
+                                <h4>Áreas de Especialização</h4>
+                                <p class="areas-especializacao"></p>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Profissional 3 -->
-                    <div id="profissional-3" class="template-profissional" data-category="terapeuta">
-                        
-                        <img data-src="Assets/img/Volunteers/Terapeuta_Dra. Ana Oliveira.jpg" alt="Dra. Ana Oliveira" class="imagem-profissional">
-                        <div class="info-profissional">
-                            
-                            <h3 class="nome-profissional">Dra. Ana Oliveira</h3>
-                            <p class="especialidade-profissional">Terapeuta</p>
-                            <p class="descricao-profissional">Especialista em terapia familiar e relacionamentos.</p>
-                            
-                            <div class="redes-sociais-profissional">
-                                <a href="#" class="icone-social"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="icone-social"><i class="fas fa-envelope"></i></a>
+                            <div class="secao-detalhes">
+                                <h4>Abordagem Terapêutica</h4>
+                                <p class="abordagem-terapeutica"></p>
+                            </div>
+
+                            <div class="secao-detalhes">
+                                <h4>Experiência</h4>
+                                <p class="experiencia-profissional"></p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Container onde os cards serão injetados -->
-                <div id="grade-profissionais" class="grade-profissionais"></div>
             </div>
 
-        </article>
+        </section>
 
         <!-- Bloco BloG  -->
         <article id="blog" class="Block_Blog">
@@ -549,7 +580,7 @@
                             <div class="block_inside-item" data-category="services">
                                 <h2 class="block_inside-header">
                                     <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                        Como marcar uma consulta com um profissional de saúde mental ?
+                                        Quais profissionais ajudam na minha saúde mental?
                                     </button>
                                 </h2>
                                 <div id="faq5" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionLeft">
@@ -583,7 +614,7 @@
                             <div class="block_inside-item" data-category="services">
                                 <h2 class="block_inside-header">
                                     <button class="block_inside-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                                        A terapia é apenas para quem tem transtornos mentais ?
+                                        Terapia é apenas para quem tem transtornos mentais ?
                                     </button>
                                 </h2>
                                 <div id="faq7" class="block_inside-collapse collapse" data-bs-parent="#faqAccordionRight">
@@ -744,7 +775,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
     <!-- JavaScript Personalizado -->
-    <script src="javascript/03-Animacao_Volunteers.js"></script>
+     <script src="javascript/01-header.js"></script>
+    <script src="javascript/03-Volunteers.js"></script>
     <script src="javascript/05-Faq.js"></script>
 
 </body>
